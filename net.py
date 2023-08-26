@@ -137,7 +137,7 @@ if __name__ == "__main__":
 
       output = model(data)
       
-
+      # to do make this MSE error operate with tinygrad tensors 
       loss = floss(output, target)
       loss.backward()
       # Gradient clipping
